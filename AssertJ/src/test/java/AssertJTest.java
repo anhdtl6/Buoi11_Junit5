@@ -14,10 +14,10 @@ class AssertJTest {
                 .doesNotEndWith("@")
                 .containsPattern("^[a-zA-Z0-9][\\w-]+@([\\w]+\\.[\\w]+|[\\w]+\\.[\\w]{2,}\\.[\\w]{2,4})$");
     }
+
     @Test
-    void HumanWeight()
-    {
-        double weight= 50.2;
+    void HumanWeight() {
+        double weight = 50.2;
         assertThat(weight).isNotZero()
                 .isNotNull()
                 .isBetween(0.0, 150.0)
@@ -26,4 +26,13 @@ class AssertJTest {
                 .isCloseTo(50.0, Offset.offset(0.5d));
     }
 
+    @Test
+    public void CMND() {
+        String[] SoCMND = new String[]{"123456789", "123456789", "123456789", "123456789", "123456789"};
+        for (int i = 0; i < SoCMND.length; i++) {
+            assertThat(SoCMND[i]).containsOnlyDigits()
+                    .hasSize(9)
+                    .isNotNull();
+        }
+    }
 }
