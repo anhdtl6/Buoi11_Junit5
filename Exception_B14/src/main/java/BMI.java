@@ -22,7 +22,7 @@ public class BMI {
             }
         }
         System.out.println("Nhập chiều cao: ");
-        while (true) {
+        while (chieucao <=0) {
             try {
                 chieucao = sc.nextDouble();
                 if (chieucao <= 0) throw new ArithmeticException();
