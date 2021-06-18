@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Exception_B14" />
-        <module name="Buoi15" />
         <module name="AssertJ" />
+        <module name="Buoi15" />
+        <module name="B16_Collection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
