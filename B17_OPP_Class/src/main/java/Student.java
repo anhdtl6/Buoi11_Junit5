@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 
 public class Student extends Person {
 
@@ -11,5 +10,10 @@ public class Student extends Person {
     {
         return  "Id:" + id + ", Họ tên:" + fullName + ", Địa chỉ:" + address;
 
+    }
+
+    @Override
+    public void Work() {
+        System.out.println("Học");
     }
 }

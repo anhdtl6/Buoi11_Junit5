@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Person implements PersonAction{
+public class Person implements PersonAction {
     public Person(long id,String fullName, String address) {
         this.id = id;
         this.fullName = fullName;
