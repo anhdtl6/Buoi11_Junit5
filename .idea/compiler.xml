@@ -9,6 +9,7 @@
         <module name="B17_OPP_Class" />
         <module name="Exception_B14" />
         <module name="AssertJ" />
+        <module name="B18_Collection_DataStructure" />
         <module name="Buoi15" />
         <module name="B16_Collection" />
       </profile>
